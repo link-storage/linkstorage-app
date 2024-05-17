@@ -1,6 +1,6 @@
-import { ModalType } from '@/types';
+import { ModalType } from '@/src/types';
 import { createSlice } from '@reduxjs/toolkit';
-import { RootState } from '@/redux/store';
+import { RootState } from '@/src/redux/store';
 
 export interface IModalState {
   modal: ModalType | undefined;

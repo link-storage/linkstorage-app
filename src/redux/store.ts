@@ -1,14 +1,14 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import appSlice from '@/redux/slice/appSlice';
-import authSlice from '@/redux/slice/authSlice';
-import modalSlice from '@/redux/slice/modalSlice';
-import errorSlice from '@/redux/slice/errorSlice'
+import appSlice from '@/src/redux/slice/appSlice';
+import authSlice from '@/src/redux/slice/authSlice';
+import modalSlice from '@/src/redux/slice/modalSlice';
+import errorSlice from '@/src/redux/slice/errorSlice';
 
 const rootReducer = combineReducers({
   app: appSlice,
   auth: authSlice,
   modal: modalSlice,
-  error: errorSlice
+  error: errorSlice,
 });
 
 const store = configureStore({

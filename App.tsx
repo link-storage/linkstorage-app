@@ -4,11 +4,11 @@ import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { NavigationContainer, NavigationContainerRef, Route } from '@react-navigation/native';
 import { Provider } from 'react-redux';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import store from '@/redux/store';
-import StackNavigator from '@/screens/StackNavigator';
+import store from '@/src/redux/store';
+import StackNavigator from '@/src/screens/StackNavigator';
 import { MMKV } from 'react-native-mmkv';
 import { firebase } from '@react-native-firebase/analytics';
-import { StackParamList } from '@/types/routes';
+import { StackParamList } from '@/src/types/routes';
 import analytics from '@react-native-firebase/analytics';
 
 export const storage = new MMKV();

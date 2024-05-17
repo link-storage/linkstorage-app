@@ -1,14 +1,15 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StackParamList } from '@/types/routes';
+import { StackParamList } from '@/src/types/routes';
 import { useDispatch, useSelector } from 'react-redux';
 import { storage } from 'App';
 import { useCallback, useEffect } from 'react';
-import { SET_THEME } from '@/redux/slice/appSlice';
-import { getAuthState } from '@/redux/slice/authSlice';
-import { ROUTES } from '@/constant/routes';
-import ErrorScreen from '@/screens/screen/ErrorScreen';
-import { getError } from '@/redux/slice/errorSlice';
-import LoadingScreen from '@/screens/screen/LoadingScreen';
+import { SET_THEME } from '@/src/redux/slice/appSlice';
+import { getAuthState } from '@/src/redux/slice/authSlice';
+import { ROUTES } from '@/src/constant/routes';
+import ErrorScreen from '@/src/screens/screen/ErrorScreen';
+import { getError } from '@/src/redux/slice/errorSlice';
+import LoadingScreen from '@/src/screens/screen/LoadingScreen';
+import HomeScreen from '@/src/screens/screen/HomeScreen';
 
 const Stack = createNativeStackNavigator<StackParamList>();
 
@@ -21,30 +22,26 @@ const StackNavigator = () => {
   const renderScreen = useCallback(() => {
     if (isError) {
       return (
-        <Stack.Screen
-          name={ROUTES.SCREEN.ERROR}
-          component={ErrorScreen}
-        />
-      )
+        <Stack.Screen name={ROUTES.SCREEN.ERROR} component={ErrorScreen} />
+      );
     }
     if (!isSignIn && isSigningIn && isSigningUp) {
       return (
-        <Stack.Screen
-          name={ROUTES.SCREEN.LOADING}
-          component={LoadingScreen}
-        />
+        <Stack.Screen name={ROUTES.SCREEN.LOADING} component={LoadingScreen} />
       );
     } else if (!isSignIn && !isSigningIn && !isSigningUp) {
-    } else {}
+      return <Stack.Screen name={ROUTES.SCREEN.HOME} component={HomeScreen} />;
+    } else {
+      return <Stack.Screen name={ROUTES.SCREEN.HOME} component={HomeScreen} />;
+    }
   }, [isSignIn, isSigningIn, isSigningUp]);
-
 
   useEffect(() => {
     if (theme !== undefined) {
       dispatch(
         SET_THEME({
           theme: theme,
-        }),
+        })
       );
     }
   }, [theme]);

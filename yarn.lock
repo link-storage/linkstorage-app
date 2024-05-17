@@ -3030,10 +3030,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-native-dotenv@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@types/react-native-dotenv@npm:0.2.2"
+  checksum: 10c0/0b24dc29cf119c689c7758e5cec044c7c2c74f046150fb84b515d70ea94301fd2123343f11b7dac01bbadcc730b5405607ac2a96e39cc599e0cf197bcefa8710
+  languageName: node
+  linkType: hard
+
 "@types/react-native-push-notification@npm:^8":
   version: 8.1.4
   resolution: "@types/react-native-push-notification@npm:8.1.4"
   checksum: 10c0/cd5f3f25baa16f8c6e68030b21d62b1f928b6555cbcfff23b74655f72d7aeb4d473e873358dc5a771e3d3745e64d90ec9fe34dc46d427765879e5efec8c86a08
+  languageName: node
+  linkType: hard
+
+"@types/react-native-vector-icons@npm:^6.4.18":
+  version: 6.4.18
+  resolution: "@types/react-native-vector-icons@npm:6.4.18"
+  dependencies:
+    "@types/react": "npm:*"
+    "@types/react-native": "npm:^0.70"
+  checksum: 10c0/b27f2295c5baaba9ce2ff9ade6e505e4d1fe4f40a628df13dc26d0e1b3ccee9775846f3613a443d91cfe86844703b81e9e64a10cc4b7fac1edfde96cb82c893b
+  languageName: node
+  linkType: hard
+
+"@types/react-native@npm:^0.70":
+  version: 0.70.19
+  resolution: "@types/react-native@npm:0.70.19"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/09a5191dd0f3b85abfa8939df585860ba11a666d888846c7fd7d8d5d1cd72a39224e154403f90a5b82f1dc6c896fa3447e4f5061b2d3e102d0ce798e559d7f13
   languageName: node
   linkType: hard
 
@@ -3252,73 +3278,6 @@ __metadata:
   checksum: 10c0/c7647c442502720182b0d65b17d45d2d95317c1c8c497626fe524bda79b4fb768a9aa4fae2da919f308e7abcff7d67c058b102a9d641097e9a57f0b80187851f
   languageName: node
   linkType: hard
-
-"LinkStorageApp@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "LinkStorageApp@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.20.0"
-    "@babel/preset-env": "npm:^7.20.0"
-    "@babel/runtime": "npm:^7.20.0"
-    "@bam.tech/react-native-image-resizer": "npm:^3.0.9"
-    "@invertase/react-native-apple-authentication": "npm:^2.3.0"
-    "@react-native-async-storage/async-storage": "npm:^1.23.1"
-    "@react-native-clipboard/clipboard": "npm:^1.14.1"
-    "@react-native-community/push-notification-ios": "npm:^1.11.0"
-    "@react-native-firebase/analytics": "npm:^19.2.2"
-    "@react-native-firebase/app": "npm:^19.2.2"
-    "@react-native-firebase/auth": "npm:^19.2.2"
-    "@react-native-firebase/firestore": "npm:^19.2.2"
-    "@react-native-firebase/messaging": "npm:^19.2.2"
-    "@react-native-google-signin/google-signin": "npm:^11.0.1"
-    "@react-native/eslint-config": "npm:^0.72.2"
-    "@react-native/metro-config": "npm:^0.72.11"
-    "@react-navigation/bottom-tabs": "npm:^6.5.20"
-    "@react-navigation/material-top-tabs": "npm:^6.6.13"
-    "@react-navigation/native": "npm:^6.1.17"
-    "@react-navigation/native-stack": "npm:^6.9.26"
-    "@reduxjs/toolkit": "npm:^2.2.5"
-    "@tanstack/react-query": "npm:^5.36.2"
-    "@tsconfig/react-native": "npm:^3.0.0"
-    "@types/react": "npm:^18.0.24"
-    "@types/react-native-background-timer": "npm:^2"
-    "@types/react-native-push-notification": "npm:^8"
-    "@types/react-test-renderer": "npm:^18.0.0"
-    "@types/validator": "npm:^13"
-    axios: "npm:^1.6.8"
-    babel-jest: "npm:^29.2.1"
-    babel-plugin-module-resolver: "npm:^5.0.2"
-    eslint: "npm:^8.19.0"
-    jest: "npm:^29.2.1"
-    metro-react-native-babel-preset: "npm:0.76.8"
-    prettier: "npm:^2.4.1"
-    react: "npm:18.2.0"
-    react-native: "npm:0.72.6"
-    react-native-background-timer: "npm:^2.4.1"
-    react-native-circular-progress: "npm:^1.4.0"
-    react-native-dotenv: "npm:^3.4.11"
-    react-native-gesture-handler: "npm:^2.16.2"
-    react-native-image-crop-picker: "npm:^0.41.1"
-    react-native-image-picker: "npm:^7.1.2"
-    react-native-mmkv: "npm:^2.12.2"
-    react-native-pager-view: "npm:^6.3.1"
-    react-native-permissions: "npm:^4.1.5"
-    react-native-push-notification: "npm:^8.1.1"
-    react-native-restart: "npm:^0.0.27"
-    react-native-safe-area-context: "npm:^4.10.1"
-    react-native-screens: "npm:^3.31.1"
-    react-native-splash-screen: "npm:^3.3.0"
-    react-native-svg: "npm:^15.3.0"
-    react-native-svg-transformer: "npm:^1.4.0"
-    react-native-tab-view: "npm:^3.5.2"
-    react-native-vector-icons: "npm:^10.1.0"
-    react-redux: "npm:^9.1.2"
-    react-test-renderer: "npm:18.2.0"
-    redux: "npm:^5.0.1"
-    typescript: "npm:4.8.4"
-    validator: "npm:^13.12.0"
-  languageName: unknown
-  linkType: soft
 
 "abbrev@npm:^2.0.0":
   version: 2.0.0
@@ -4314,10 +4273,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:~2.13.0":
-  version: 2.13.0
-  resolution: "commander@npm:2.13.0"
-  checksum: 10c0/e3441096034439e506493ca1e5e9d5d5723ee0eadc3b2b92b3dd332b1d8fcbe72b70a1127f6790e6b3bedde3054316e9fe2cb36cef6ac051000b01559a16ba58
+"commander@npm:~2.14.1":
+  version: 2.14.1
+  resolution: "commander@npm:2.14.1"
+  checksum: 10c0/b29bb0220fb27645a958a9cbecc5c138adeb4d151a17d43acd5c8cd7ffed1a64e502a20338e3faad235c5c8e23df893dd02dfe6eddf47f90fc51b51825084719
   languageName: node
   linkType: hard
 
@@ -7359,6 +7318,75 @@ __metadata:
   languageName: node
   linkType: hard
 
+"linkstorage@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "linkstorage@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.20.0"
+    "@babel/preset-env": "npm:^7.20.0"
+    "@babel/runtime": "npm:^7.20.0"
+    "@bam.tech/react-native-image-resizer": "npm:^3.0.9"
+    "@invertase/react-native-apple-authentication": "npm:^2.3.0"
+    "@react-native-async-storage/async-storage": "npm:^1.23.1"
+    "@react-native-clipboard/clipboard": "npm:^1.14.1"
+    "@react-native-community/push-notification-ios": "npm:^1.11.0"
+    "@react-native-firebase/analytics": "npm:^19.2.2"
+    "@react-native-firebase/app": "npm:^19.2.2"
+    "@react-native-firebase/auth": "npm:^19.2.2"
+    "@react-native-firebase/firestore": "npm:^19.2.2"
+    "@react-native-firebase/messaging": "npm:^19.2.2"
+    "@react-native-google-signin/google-signin": "npm:^11.0.1"
+    "@react-native/eslint-config": "npm:^0.72.2"
+    "@react-native/metro-config": "npm:^0.72.11"
+    "@react-navigation/bottom-tabs": "npm:^6.5.20"
+    "@react-navigation/material-top-tabs": "npm:^6.6.13"
+    "@react-navigation/native": "npm:^6.1.17"
+    "@react-navigation/native-stack": "npm:^6.9.26"
+    "@reduxjs/toolkit": "npm:^2.2.5"
+    "@tanstack/react-query": "npm:^5.36.2"
+    "@tsconfig/react-native": "npm:^3.0.0"
+    "@types/react": "npm:^18.0.24"
+    "@types/react-native-background-timer": "npm:^2"
+    "@types/react-native-dotenv": "npm:^0.2.2"
+    "@types/react-native-push-notification": "npm:^8"
+    "@types/react-native-vector-icons": "npm:^6.4.18"
+    "@types/react-test-renderer": "npm:^18.0.0"
+    "@types/validator": "npm:^13"
+    axios: "npm:^1.6.8"
+    babel-jest: "npm:^29.2.1"
+    babel-plugin-module-resolver: "npm:^5.0.2"
+    eslint: "npm:^8.19.0"
+    jest: "npm:^29.2.1"
+    metro-react-native-babel-preset: "npm:0.76.8"
+    prettier: "npm:^2.4.1"
+    react: "npm:18.2.0"
+    react-native: "npm:0.72.6"
+    react-native-background-timer: "npm:^2.4.1"
+    react-native-circular-progress: "npm:^1.4.0"
+    react-native-dotenv: "npm:^3.4.11"
+    react-native-gesture-handler: "npm:^2.16.2"
+    react-native-image-crop-picker: "npm:^0.41.1"
+    react-native-image-picker: "npm:^7.1.2"
+    react-native-mmkv: "npm:^2.12.2"
+    react-native-pager-view: "npm:^6.3.1"
+    react-native-permissions: "npm:^4.1.5"
+    react-native-push-notification: "npm:^8.1.1"
+    react-native-restart: "npm:^0.0.27"
+    react-native-safe-area-context: "npm:^4.10.1"
+    react-native-screens: "npm:^3.31.1"
+    react-native-splash-screen: "npm:^3.3.0"
+    react-native-svg: "npm:^15.3.0"
+    react-native-svg-transformer: "npm:^1.4.0"
+    react-native-tab-view: "npm:^3.5.2"
+    react-native-vector-icons: "npm:^10.1.0"
+    react-redux: "npm:^9.1.0"
+    react-test-renderer: "npm:18.2.0"
+    redux: "npm:^5.0.1"
+    typescript: "npm:4.8.4"
+    validator: "npm:^13.12.0"
+  languageName: unknown
+  linkType: soft
+
 "locate-path@npm:^3.0.0":
   version: 3.0.0
   resolution: "locate-path@npm:3.0.0"
@@ -9474,7 +9502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-redux@npm:^9.1.2":
+"react-redux@npm:^9.1.0":
   version: 9.1.2
   resolution: "react-redux@npm:9.1.2"
   dependencies:
@@ -10777,14 +10805,14 @@ __metadata:
   linkType: hard
 
 "uglify-es@npm:^3.1.9":
-  version: 3.3.9
-  resolution: "uglify-es@npm:3.3.9"
+  version: 3.3.10
+  resolution: "uglify-es@npm:3.3.10"
   dependencies:
-    commander: "npm:~2.13.0"
+    commander: "npm:~2.14.1"
     source-map: "npm:~0.6.1"
   bin:
     uglifyjs: bin/uglifyjs
-  checksum: 10c0/b591de4ea2c7153f446f80f2559bbabcb4ff53a17dbfd27b9bb980b31f5fb7e563bdae6e9abc07d97ecb484ac4ceba4c7a207e6854cb2aaca72e80e6090c989e
+  checksum: 10c0/165b19b331f72aae4a0eeb4350606d8e5d39c82315ef8eaa8d3a0706d16be9282f6055b5e1e46914422b3e56520740fc68cec40a0b06e7fd6905b1f680528487
   languageName: node
   linkType: hard
 

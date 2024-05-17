@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "514901299899",
+    "project_id": "linkstorage-a1b90",
+    "storage_bucket": "linkstorage-a1b90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514901299899:android:ccf6961ae3acb9ea0e0f9e",
+        "android_client_info": {
+          "package_name": "com.resisterboy.linkstorageapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514901299899-8sncq7ffv3e8n29lugm3l4nv8edimams.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resisterboy.linkstorageapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "514901299899-3kl4i4ifunq0juchdb3uvs6i0k9sckhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3SbQOR_q78QopHM6JZClwvWb4taZzdyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514901299899-3kl4i4ifunq0juchdb3uvs6i0k9sckhd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

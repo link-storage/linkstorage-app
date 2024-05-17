@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const ErrorModal = () => {
+const HomeScreen = () => {
   return (
     <View>
-      <Text>ErrorModal</Text>
+      <Text>HomeScreen</Text>
     </View>
   );
 };
 
-export default ErrorModal;
+export default HomeScreen;
 
 const styles = StyleSheet.create({});

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { RootState } from '@/redux/store';
+import { RootState } from '@/src/redux/store';
 import { Appearance } from 'react-native';
 
 export interface IThemeSlice {
@@ -9,7 +9,7 @@ export interface IThemeSlice {
 
 const initialState: IThemeSlice = {
   theme: Appearance.getColorScheme() === 'dark' ? 'DARK' : 'LIGHT',
-  lang: 'en'
+  lang: 'en',
 };
 
 const themeSlice = createSlice({
@@ -25,11 +25,10 @@ const themeSlice = createSlice({
       state.theme = Appearance.getColorScheme() === 'dark' ? 'DARK' : 'LIGHT';
     },
     SET_LANG: (state, action) => {
-      const { lang } = action.payload
+      const { lang } = action.payload;
 
-      state.lang = lang
+      state.lang = lang;
     },
-
   },
 });
 

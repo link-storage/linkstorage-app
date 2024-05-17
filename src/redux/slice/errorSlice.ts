@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { RootState } from "@/redux/store";
+import { createSlice } from '@reduxjs/toolkit';
+import { RootState } from '@/src/redux/store';
 
 interface IErrorState {
   isError: boolean;
@@ -9,7 +9,7 @@ interface IErrorState {
 const initialState: IErrorState = {
   isError: false,
   code: null,
-}
+};
 
 const errorSlice = createSlice({
   name: 'error',
@@ -24,13 +24,13 @@ const errorSlice = createSlice({
     RESOLVE_ERROR: (state) => {
       state.isError = false;
       state.code = null;
-    }
-  }
-})
+    },
+  },
+});
 
-export const  { SET_ERROR, RESOLVE_ERROR } = errorSlice.actions;
+export const { SET_ERROR, RESOLVE_ERROR } = errorSlice.actions;
 
-export const getErrorCode = (state: RootState) => state.error.code
-export const getError = (state: RootState) => state.error
+export const getErrorCode = (state: RootState) => state.error.code;
+export const getError = (state: RootState) => state.error;
 
 export default errorSlice.reducer;

@@ -1,19 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React  from 'react'
-import { FunnelProps } from '@/types'
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { FunnelProps } from '@/src/types';
 
 type Props = {
-  funnelProps: FunnelProps[]
-}
+  funnelProps: FunnelProps[];
+};
 
-const Funnel = ({ funnelProps } : Props) => {
+const Funnel = ({ funnelProps }: Props) => {
   return (
     <View>
       <Text>Funnel</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Funnel
+export default Funnel;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

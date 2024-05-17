@@ -1,4 +1,4 @@
-package com.linkstorageapp;
+package com.resisterboy.linkstorageapp;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
