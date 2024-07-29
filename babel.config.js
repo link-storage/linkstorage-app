@@ -8,7 +8,7 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
         alias: {
           '@/src': './src',
-          '@/assets': './assets',
+          '@/public': './public',
         },
       },
     ],
@@ -26,5 +26,11 @@ module.exports = {
         verbose: false,
       },
     ],
+    [
+      "@babel/plugin-transform-private-methods", 
+      { 
+        "loose": true 
+      }
+    ]
   ],
 };
