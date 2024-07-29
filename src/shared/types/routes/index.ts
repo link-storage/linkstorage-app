@@ -22,8 +22,8 @@ export const APP_ROUTES = {
     PROFILE_SETTING: 'ProfileSettingModal',
     LANG_SETTING: 'LangSettingModal',
     APP_SETTING: 'AppSettingModal',
-    DOCUMENT_DETAIL_VIEW: 'DocumentDetailViewModal',
-    DOCUMENT_DETAIL_EDIT: 'DocumentDetailEditModal',
+    DOC_DETAIL_VIEW: 'DocDetailViewModal',
+    DOC_DETAIL_EDIT: 'DocDetailEditModal',
     NOTI_SETTING: 'NotiSettingModal',
   }
 } as const;
@@ -59,10 +59,10 @@ export type StackParamList = {
   [APP_ROUTES.MODAL.PROFILE_SETTING]: undefined;
   [APP_ROUTES.MODAL.LANG_SETTING]: undefined;
   [APP_ROUTES.MODAL.APP_SETTING]: undefined;
-  [APP_ROUTES.MODAL.DOCUMENT_DETAIL_VIEW]: {
+  [APP_ROUTES.MODAL.DOC_DETAIL_VIEW]: {
     id: string;
   };
-  [APP_ROUTES.MODAL.DOCUMENT_DETAIL_EDIT]: {
+  [APP_ROUTES.MODAL.DOC_DETAIL_EDIT]: {
     id: string;
   };
   [APP_ROUTES.MODAL.NOTI_SETTING]: undefined;

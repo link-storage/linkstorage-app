@@ -1,118 +1,44 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useEffect } from 'react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Provider } from 'react-redux';
+import store from '@/src/context/global/store';
+import { NavigationContainer } from '@react-navigation/native';
+import RootScreen from '@/src/screen/RootScreen';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import SplashScreen from 'react-native-splash-screen';
+import { MMKV } from 'react-native-mmkv';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+export const storage = new MMKV();
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
-
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+GoogleSignin.configure({
+  webClientId: "969882082409-0g60khn4r5060mfs22ropk1tik6eosu6.apps.googleusercontent.com",
+  iosClientId: '969882082409-024g6ecutgh4qj8ri5mrbqe54s13c4ot.apps.googleusercontent.com'
 });
 
-export default App;
+const App = () => {
+
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: { retry: 1 },
+      mutations: { retry: 1 },
+    },
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 1000);
+  }, []);
+  
+  return (
+    <NavigationContainer>
+      <QueryClientProvider client={queryClient}>
+        <Provider store={store}>
+          <RootScreen />
+        </Provider>
+      </QueryClientProvider>
+    </NavigationContainer>
+  )
+}
+
+export default App
