@@ -3691,6 +3691,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/react-native@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "@tsconfig/react-native@npm:3.0.5"
+  checksum: 10c0/a82a69b11c1427859ccc70be42b6c348f5829b9066e45c1d281270fc29bfb70949fdbc236d55282f533468ecc621e5ce6df181928094686271ffea3584c0e8e6
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.1.14":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -4119,6 +4126,7 @@ __metadata:
   resolution: "LinkStorage@workspace:."
   dependencies:
     "@babel/core": "npm:^7.20.0"
+    "@babel/plugin-transform-private-methods": "npm:^7.24.7"
     "@babel/preset-env": "npm:^7.20.0"
     "@babel/runtime": "npm:^7.20.0"
     "@bam.tech/react-native-image-resizer": "npm:^3.0.10"
@@ -4142,6 +4150,7 @@ __metadata:
     "@react-navigation/native-stack": "npm:^6.11.0"
     "@reduxjs/toolkit": "npm:^2.2.6"
     "@tanstack/react-query": "npm:^5.51.15"
+    "@tsconfig/react-native": "npm:^3.0.5"
     "@types/react": "npm:^18.2.6"
     "@types/react-native-dotenv": "npm:^0.2.2"
     "@types/react-native-push-notification": "npm:^8"
